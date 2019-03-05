@@ -5,6 +5,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {LoginComponent} from './pages/login/login.component';
+import {HeaderComponent} from './components/header/header.component';
 
 import {IonicModule, IonicRouteStrategy} from '@ionic/angular';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
@@ -17,6 +18,7 @@ import {AppComponent} from './app.component';
     declarations: [
         AppComponent,
         LoginComponent,
+        HeaderComponent
     ],
     entryComponents: [],
     imports: [
