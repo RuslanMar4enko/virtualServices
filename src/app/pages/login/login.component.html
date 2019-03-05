@@ -1,0 +1,36 @@
+<div class="h-100 d-flex justify-content-center align-items-center">
+    <form class="form-signin"
+          [formGroup]="loginForm"
+          (ngSubmit)="siginIn()">
+        <div class="form-group">
+            <small class="error-small"
+                   *ngIf="error('email')">
+                {{getMessageValid('email')}}
+            </small>
+            <input type="email"
+                   id="inputEmail"
+                   formControlName="email"
+                   class="form-control"
+                   placeholder="Email address"
+                   required
+                   autofocus>
+        </div>
+        <div class="form-group">
+            <small class="error-small"
+                   *ngIf="error('password')">
+                {{getMessageValid('password')}}
+            </small>
+            <input type="password"
+                   formControlName="password"
+                   id="inputPassword"
+                   class="form-control"
+                   placeholder="Password"
+                   required>
+        </div>
+        <button [disabled]="loginForm.invalid" class="btn-login"
+                type="submit">Sign in
+        </button>
+
+    </form>
+</div>
+
