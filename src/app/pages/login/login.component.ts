@@ -47,6 +47,6 @@ export class LoginComponent {
     }
 
     async siginIn() {
-        console.log('azazazaz');
+      this.router.navigate(['services']);
     }
 }

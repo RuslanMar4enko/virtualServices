@@ -1,0 +1,45 @@
+@import "../../../global";
+
+.header {
+  &__wrapper {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg-default;
+    color: #fff
+  }
+  &__locations {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vh;
+
+    &-active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $bg-active;
+      color: $bg-default;
+    }
+  }
+}
+
+.img{
+  &-message {
+    background: url("../../../assets/img/message.png") no-repeat;
+    height: 100%;
+    width: 10vh;
+  }
+  &-logo {
+    background: url("../../../assets/img/logo.png") no-repeat;
+    height: 100%;
+    width: 8vh;
+  }
+}

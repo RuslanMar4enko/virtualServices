@@ -3,8 +3,10 @@ import {BrowserModule} from '@angular/platform-browser';
 import {RouteReuseStrategy} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatTabsModule } from '@angular/material';
 
 import {LoginComponent} from './pages/login/login.component';
+import {ServicesComponent} from './pages/services/services.component';
 import {HeaderComponent} from './components/header/header.component';
 
 import {IonicModule, IonicRouteStrategy} from '@ionic/angular';
@@ -13,12 +15,14 @@ import {StatusBar} from '@ionic-native/status-bar/ngx';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
         AppComponent,
         LoginComponent,
-        HeaderComponent
+        HeaderComponent,
+        ServicesComponent,
     ],
     entryComponents: [],
     imports: [
@@ -28,6 +32,8 @@ import {AppComponent} from './app.component';
         AppRoutingModule,
         FormsModule,
         ReactiveFormsModule,
+        BrowserAnimationsModule,
+        MatTabsModule,
     ],
     providers: [
         StatusBar,
