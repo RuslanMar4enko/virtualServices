@@ -14,6 +14,10 @@
 .error-small{
   color: red;
 }
+html, body, #fullheight {
+  min-height: 100% !important;
+  height: 100%;
+}
 .ion-page{
   position: unset;
   display: unset;
