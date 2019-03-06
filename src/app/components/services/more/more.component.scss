@@ -1,0 +1,47 @@
+@import '../../../../assets/scss/variables';
+
+.service {
+
+  &__wrapper {
+    padding: 30px;
+    border-bottom: 1px solid $text-grey-light;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    height: 25vh;
+
+    &_image {
+      background: url("../../../../assets/img/service.png") no-repeat;
+      width: 50%;
+      background-size: contain;
+      flex-grow: 1;
+    }
+    &_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: self-start;
+      margin: 30px 0 0 30px;
+      flex-grow: 2;
+
+      &-name {
+        font-weight: bold;
+      }
+      &-description {
+        color: $text-grey;
+      }
+      &-btn {
+
+      }
+    }
+  }
+
+  &__header,
+  &__body {
+    margin-bottom: 30px
+  }
+  &__footer {
+    color: $text-grey;
+  }
+}

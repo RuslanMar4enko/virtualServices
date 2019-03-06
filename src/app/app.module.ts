@@ -17,12 +17,15 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MoreComponent} from './components/services/more/more.component';
+
 @NgModule({
     declarations: [
         AppComponent,
         LoginComponent,
         HeaderComponent,
         ServicesComponent,
+        MoreComponent,
     ],
     entryComponents: [],
     imports: [
