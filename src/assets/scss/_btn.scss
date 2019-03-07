@@ -1,12 +1,38 @@
 .btn {
+  display: flex;
+  align-items: center;
   border-radius: 20px;
   border: none;
   padding: 0 15px;
-  font-weight: bold;
   min-height: 22px;
 
   &-blue {
     color: white;
     background-color: $btn-blue;
+  }
+  &-green {
+    color: white;
+    background-color: $btn-green;
+  }
+  &-pink {
+    color: white;
+    background-color: $btn-pink;
+  }
+  &-grey {
+    color: white;
+    background-color: $btn-grey;
+  }
+
+  &-mr {
+    margin-right: $default-margin/2;
+  }
+  &-ml {
+    margin-left: $default-margin/2;
+  }
+  &-mt {
+    margin-top: $default-margin/2;
+  }
+  &-mb {
+    margin-bottom: $default-margin/2;
   }
 }

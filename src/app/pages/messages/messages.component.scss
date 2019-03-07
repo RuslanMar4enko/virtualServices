@@ -1,0 +1,48 @@
+@import "../../../assets/scss/variables";
+
+.message {
+  padding: $default-padding 0 0 $default-padding;
+  line-height: 1.3rem;
+
+  &-active {
+    background: #EFF2F9;
+  }
+  &-line {
+    display: flex;
+    height: 150px;
+    border-bottom: 1px solid $text-grey-light;
+    padding: 0 $default-padding $default-padding 0;
+  }
+  &__img {
+    background: url("../../../assets/img/service.png") no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    padding: 0 $default-padding/2;
+
+    &-time {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    &-header {
+      margin-bottom: .5rem;
+    }
+    &-body {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 40px;
+    }
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

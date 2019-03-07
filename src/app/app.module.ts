@@ -8,6 +8,7 @@ import { MatTabsModule } from '@angular/material';
 import {LoginComponent} from './pages/login/login.component';
 import {ServicesComponent} from './pages/services/services.component';
 import {HeaderComponent} from './components/header/header.component';
+import {MessagesComponent} from './pages/messages/messages.component';
 
 import {IonicModule, IonicRouteStrategy} from '@ionic/angular';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
@@ -24,6 +25,7 @@ import {MoreComponent} from './components/services/more/more.component';
         AppComponent,
         LoginComponent,
         HeaderComponent,
+        MessagesComponent,
         ServicesComponent,
         MoreComponent,
     ],
